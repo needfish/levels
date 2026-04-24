@@ -46,11 +46,23 @@ def aggregate_market_data():
                 
             is_current = job.created_at >= thirty_days_ago
             
+            # Extract all skills (handle both type="skill" and type="group")
+            all_skills = []
             for req in reqs:
-                skill_name = req.get("skill")
-                if not skill_name:
-                    continue
-                
+                if req.get("type") == "skill":
+                    skill_name = req.get("skill")
+                    if skill_name:
+                        all_skills.append(skill_name)
+                elif req.get("type") == "group":
+                    # Extract skills from nested group
+                    group_skills = req.get("skills", [])
+                    for skill_obj in group_skills:
+                        skill_name = skill_obj.get("skill")
+                        if skill_name:
+                            all_skills.append(skill_name)
+            
+            # Aggregate stats for each skill
+            for skill_name in all_skills:
                 if is_current:
                     stats_current[skill_name]["count"] += 1
                     if job.min_salary_vnd:
