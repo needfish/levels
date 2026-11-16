@@ -4,25 +4,6 @@ Leveller.ai is a platform that uses Artificial Intelligence (AI) to help candida
 
 ---
 
-## Pitch Slides & Video Demo
-
-For judges and experts to get a visual overview of the product, the team has prepared presentation materials and a live system walkthrough video:
-- **Pitch Slides (Google Slides)**: Detailed pitch deck describing the problem, solution, market research, business model, and technology architecture of Leveller.ai.
-- **Product Demo Video (YouTube)**: A detailed walkthrough of the core feature flow (Upload CV -> AI Extraction -> Select TopCV JD -> Radar Chart Assessment -> Receive suggested course roadmap).
-
----
-
-## Objective & Problem Statement
-
-In a volatile labor market, candidates often struggle with:
-- **Identifying skill gaps**: Not knowing what they lack compared to actual employer requirements.
-- **Choosing certificates & roadmaps**: Among thousands of certificates, not knowing which ones actually add value to fill competency gaps.
-- **Optimizing their profile**: Resumes that do not reflect the core skills the market demands.
-
-**Leveller.ai** solves this by using **Vector Search** and **LLM Reasoning** to analyze the correlation between individual capabilities and **Job Description (JD)** requirements, then suggesting the most accurate certificate roadmap.
-
----
-
 ## Key Features
 
 - **AI CV Parser**: Automatically extracts competency information with high accuracy (supports scanned files/images).
@@ -107,6 +88,4 @@ Access at: [http://localhost:3000](http://localhost:3000)
 - **AI Agent Guidelines**: Instructions for AI coding assistants.
 
 ---
-
-*2026 Leveller.ai - 078 Team - A20 Applied AI Program VinUniversity*
 
