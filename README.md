@@ -20,7 +20,7 @@ Levels is a CV Analysis tool that compares a profile with a target Job Descripti
 
 ---
 
-## Quick Start
+## Setup Guide
 
 ### 1. Infrastructure Setup (Docker)
 Requirements: Docker & Docker Compose.
